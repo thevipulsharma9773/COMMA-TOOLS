@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us - Number Formatter & Converter</title>
+
+  <meta name="description" content="Contact Number Formatter & Converter for feedback, support, or questions. We're here to help!" />
+  <meta name="keywords" content="contact, feedback, support, number Formatter tool" />
+  <meta name="author" content="Vipul Sharma" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com/contact.html" />
+  <meta property="og:title" content="Contact Us - Number Formatter & Converter" />
+  <meta property="og:description" content="Contact Number Formatter & Converter for feedback, support, or questions. We're here to help!" />
+  <meta property="og:image" content="https://yourdomain.com/social-share-image.jpg" />
+
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://yourdomain.com/contact.html" />
+  <meta property="twitter:title" content="Contact Us - Number Formatter & Converter" />
+  <meta property="twitter:description" content="Contact Number Formatter & Converter for feedback, support, or questions. We're here to help!" />
+  <meta property="twitter:image" content="https://yourdomain.com/social-share-image.jpg" />
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    :root {
+      --primary: #343a40;
+      --accent: #007bff;
+      --light: #f8f9fa;
+      --text: #212529;
+      --box-bg: #ffffff;
+      --box-shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: var(--light);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary);
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    nav a:hover,
+    nav a:focus {
+     color: var(--accent);
+     background-color: rgba(0,123,255,0.15);
+        font-size: 15px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .logo span {
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: #ffffff;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 15px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      background: var(--box-bg);
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 24px var(--box-shadow);
+    }
+
+    h1, h2 {
+      color: var(--primary);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2rem;
+    }
+
+    h2 {
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    /* Form Styles */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    label {
+      font-weight: 600;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-family: inherit;
+      resize: vertical;
+      transition: border-color 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+      border-color: var(--accent);
+      outline: none;
+    }
+
+    textarea {
+      min-height: 120px;
+    }
+
+    button {
+      background-color: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1.1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      align-self: flex-start;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      background-color: var(--primary);
+      color: #ffffff;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 50px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    /* footer a {
+      color: #ffffff;
+      margin: 0 8px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: var(--accent);
+    } */
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .container {
+        margin: 30px 15px;
+        padding: 20px 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="img/logo.png" alt="Logo" />
+    <span>CommaTools</span>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="contact.html" aria-current="page">Contact</a>
+  </nav>
+</header>
+
+<div class="container" role="main" aria-labelledby="pageTitle">
+  <h1 id="pageTitle">Contact Us</h1>
+
+  <p>If you have questions, suggestions, or feedback, we would love to hear from you!</p>
+
+  <h2>Send Us Your Feedback</h2>
+  <p>Use the form below to send us a message directly. We aim to respond as soon as possible.</p>
+
+  <form action="mailto:pd.vipulsharma@gmail.com" method="POST" enctype="text/plain" >
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" required placeholder="Enter your name" />
+
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="email" required placeholder="Enter your email" />
+
+    <label for="message">Your Message</label>
+    <textarea id="message" name="message" required placeholder="Write your message here..."></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+  <h2>Other Ways to Reach Us</h2>
+  <p>You can also email us directly at: <a href="mailto:pd.vipulsharma@gmail.com">pd.vipulsharma@gmail.com</a></p>
+</div>
+
+<footer>
+  <p>&copy; 2025 Comma Tools. All rights reserved.</p>
+  <nav aria-label="Footer navigation">
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="terms.html">Terms of Service</a> |
+    <a href="contact.html">Contact Us</a> |
+    <a href="about.html">About Us</a>
+  </nav>
+</footer>
+
+</body>
+</html>

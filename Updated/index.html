@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Clean, convert, and format large lists of numbers easily. Remove duplicates, export to CSV, and copy results. Fast and free tool.">
+  <meta name="keywords" content="number formatter, remove duplicates, export numbers, clean numbers, convert numbers, comma separator">
+  <meta name="author" content="CommaTools">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Number Formatter & Converter Tool">
+  <meta property="og:description" content="Format, clean, and export your number list online in seconds.">
+  <meta property="og:image" content="img/logo.png">
+  <meta property="og:url" content="https://yourdomain.com">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <title>CommaTools</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="img/logo.png" alt="Logo" />
+    <span>CommaTools</span>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<div class="container">
+  <h2>Number Formatter & Duplicate Remover - CommaTools</h2>
+  <textarea id="inputNumbers" rows="8" placeholder="Paste numbers (comma or line-separated)..."></textarea>
+  <div class="count-display" id="inputCount">Input numbers: 0</div>
+
+  <div class="checkbox-row">
+    <input type="checkbox" id="removeDuplicates" />
+    <label for="removeDuplicates">Remove duplicate numbers</label>
+  </div>
+
+  <div class="button-row">
+    <button onclick="copyToClipboard()">Copy</button>
+    <button onclick="exportCSV()">Export CSV</button>
+  </div>
+
+  <div class="output">
+    <textarea id="commaOutput" readonly placeholder="Comma-separated output will appear here..."></textarea>
+    <div class="count-display" id="numberCount">Total numbers: 0</div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Comma Tools. All rights reserved.</p>
+  <nav aria-label="Footer navigation">
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="terms.html">Terms of Service</a> |
+    <a href="contact.html">Contact Us</a> |
+    <a href="about.html">About Us</a>
+  </nav>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
